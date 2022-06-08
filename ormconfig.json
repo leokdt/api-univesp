@@ -1,0 +1,20 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "l30c@rd0",
+    "database": "gestao_notas",
+    "entities": [
+        "src/entities/*.ts"
+    ],
+    "migrations": [
+        "src/database/migrations/**/*.ts"
+    ],
+    "cli":{
+        "migrationsDir": [
+            "src/database/migrations"
+        ],
+        "entitiesDir": "src/entities"
+    }
+}
